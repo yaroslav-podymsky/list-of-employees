@@ -1,0 +1,93 @@
+$break-xl: 1200px
+$break-md: 768px
+$break-xs: 375px
+
+body 
+  margin: 0
+  font-family: sans-serif
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  background: #d9e2e67b
+
+
+code 
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace
+
+* 
+  box-sizing: border-box
+  margin: 0
+  padding: 0
+
+
+.container
+  max-width: 1200px
+  margin: 0 auto
+  padding: 24px
+
+  @media (max-width: $break-md)
+    padding: 10px
+    font-size: 10px
+  @media (max-width: $break-xs)
+    padding: 8px 4px
+
+.ant-table-wrapper
+  overflow-x: auto
+  -webkit-overflow-scrolling: touch
+  margin: 0 -8px
+  padding: 0 8px
+
+
+.ant-table
+  min-width: 600px
+  overflow-x: auto
+  @media (max-width: $break-md)
+    font-size: 10px
+
+.ant-table-row
+  cursor: pointer
+  &:hover
+    background-color: #f5f5f5
+
+.ant-form
+  max-width: 600px
+  width: 100%
+  padding: 0 16px
+  @media (max-width: $break-md)
+    padding: 0 6px
+
+.worker-header
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-bottom: 24px
+  flex-wrap: wrap
+  gap: 16px
+
+.filter-controls
+  display: flex
+  gap: 16px
+  margin-bottom: 16px
+
+.ant-select
+  min-width: 200px
+
+.ant-checkbox-wrapper
+  display: flex
+  align-items: center
+  
+
+h2.ant-typography
+  margin-bottom: 0
+  @media (max-width: $break-md)
+    font-size: 10px
+
+  @media (max-width: $break-xs)
+    font-size: 18px
+
+.ant-space
+  * 
+    @media (max-width: $break-md)
+      font-size: 12px 
+.ant-table-cell
+  @media (max-width: $break-md)
+    padding: 16px 4px !important
